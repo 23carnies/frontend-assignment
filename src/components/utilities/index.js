@@ -1,2 +1,2 @@
-export * from './Elevations';
+export * from './Breakpoints';
 export * from './Positions';
