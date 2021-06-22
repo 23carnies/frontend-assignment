@@ -6,8 +6,7 @@ import styled from "styled-components";
 import { Flex } from "../components/utilities";
 
 const MovieList = () => {
-    const [showModal, setShowModal] = useState(false);
-    // const openModal = () => setShowModal(!showModal);
+  const [showModal, setShowModal] = useState(false);
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState("");
 
@@ -32,7 +31,6 @@ const MovieList = () => {
             onClick={() => {
                 setShowModal(true);
                 fetchOneMovie(movie.id);
-                console.log('help',movie.id)
             }}
             key={idx}
           >
@@ -40,7 +38,7 @@ const MovieList = () => {
           </ModalButton>
         ))}
       </CardGroup>
-      <DetailModal movie={movie} showModal={showModal}/>
+      <DetailModal movie={movie} showModal={showModal} setShowModal={setShowModal}/>
     </>
   );
 };
