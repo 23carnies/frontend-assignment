@@ -18,7 +18,6 @@ export const below = Object.keys(size).reduce((acc, label) => {
   `;
   return acc;
 }, {});
-console.log('below', below);
 
 export const above = Object.keys(size).reduce((acc, label) => {
   acc[label] = (...args) => css`
@@ -28,4 +27,3 @@ export const above = Object.keys(size).reduce((acc, label) => {
   `;
   return acc;
 }, {});
-console.log('above', above);
