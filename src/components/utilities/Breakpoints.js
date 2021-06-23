@@ -1,13 +1,11 @@
 import { css } from 'styled-components';
 
 const size = {
-  xXLarge: 1600,
-  xLarge: 1440,
-  large: 1280,
-  medium: 1024,
-  small: 768,
-  xSmall: 640,
-  xXSmall: 500,
+  xXlarge: 1440,
+  xLarge: 1280,
+  large: 1024,
+  medium: 768,
+  small: 500,
 };
 
 export const below = Object.keys(size).reduce((acc, label) => {
