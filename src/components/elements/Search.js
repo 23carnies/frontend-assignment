@@ -35,13 +35,11 @@ const Container = styled.div`
 `;
 
 const Icon = styled.img`
-  padding: 0 1% 0 2%;
+  padding: 0 1% 0 1%;
+  margin-left: 10px;
   width: 20px;
   height: 20px;
   z-index: 20;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
 `;
 
 const Input = styled.input`
