@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import logo from "../images/logo.svg";
 import MovieList from "./MovieList";
-import styled from 'styled-components';
+import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 import { Flex } from "./utilities";
-import Search from './elements/Search';
+import Search from "./elements/Search";
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <Main>
-    <Nav>
-      <img src={logo} alt="Timescale" />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-    </Nav>
+      <Nav>
+        <img src={logo} alt="Timescale" />
+        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      </Nav>
       <hr />
       <MovieList searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <GlobalStyle />
@@ -30,6 +30,5 @@ const Main = styled.main`
 `;
 
 const Nav = styled.nav`
-  ${Flex({jc:'space-between'})};
-
+  ${Flex({ jc: "space-between" })};
 `;
