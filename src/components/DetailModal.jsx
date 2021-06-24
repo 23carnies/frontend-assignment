@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useRef } from "react";
 import { Flex } from "./utilities";
 import styled from "styled-components";
 import CloseX from "../images/close.svg";
-import { below } from './utilities';
-import Moment from 'moment';
+import { below } from "./utilities";
+import Moment from "moment";
 
 const DetailModal = ({ showModal, setShowModal, movie }) => {
   const modalRef = useRef();
@@ -50,7 +50,7 @@ const DetailModal = ({ showModal, setShowModal, movie }) => {
               <InfoBox>
                 <p>
                   <b>Release date: </b>
-                  {Moment(movie.release_date).format('ll')}
+                  {Moment(movie.release_date).format("ll")}
                 </p>
                 <p>{movie.overview}</p>
                 <p>
